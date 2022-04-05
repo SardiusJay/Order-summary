@@ -37,7 +37,7 @@ body{
 }
 
 .cont--bdy {
-    margin: 1em 3em;
+    margin: 1em 1.5em;
     text-align: center;
 }
 
@@ -56,19 +56,73 @@ button{
     border: none;
     width: 100%;
     font-weight: 700;
-    color: white;
+    /*color: white;*/
     padding: 0.9em 2em;
     font-size: 1rem;
     background-color: hsl(225, 100%, 94%);
-    box-shadow: 0px 20px 20px 0px hsl(225, 100%, 94%) ;
+  /*  box-shadow: 0px 20px 20px 0px hsl(225, 100%, 94%) ;*/
 }
 button:hover{
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 0.2;
 }
-
-.attribution{
+.plan {
+    display: flex;
     align-items: center;
-    justify-content: center;
-}
-
+    justify-content: space-around;
+    background-color: hsl(225, 100%, 98%);
+    padding: 0.9em;
+    border-radius: 0.6rem;
+    margin: 2em 0;
+  }
+  
+  .plan > div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 4em;
+  }
+  
+  .plan p {
+    margin: 0;
+  }
+  
+  .plan span {
+    font-weight: 700;
+    color: black;
+    font-size: small;
+  }
+  
+  .plan a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+  }
+  
+  .plan a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.7;
+  }
+  
+  .cont--bdy > p:last-child {
+    font-weight: 900;
+  }
+  
+  .cont--bdy > p:last-child:hover {
+    cursor: pointer;
+    color: black;
+  }
+  
+  .attribution {
+    text-align: center;
+  }
+  
+  @media (max-width: 375px) {
+    .container {
+      background: url(./images/pattern-background-mobile.svg) no-repeat;
+      background-color: hsl(225, 100%, 94%);
+    }
+  
+    .plan > div {
+      margin-right: 1.5em;
+    }
