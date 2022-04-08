@@ -55,7 +55,7 @@ button{
     border-radius: 0.6rem;
     border: none;
     width: 100%;
-    font-weight: 700;
+    font-weight: 500;
     color: blue;
     padding: 0.9em 2em;
     font-size: 1rem;
@@ -104,7 +104,7 @@ button:hover{
   }
   
   .cont--bdy > p:last-child {
-    font-weight: 900;
+    font-weight:700;
   }
   
   .cont--bdy > p:last-child:hover {
